@@ -62,7 +62,7 @@ const NewList = ({ category }) => {
           case "":
             // 뉴스 API 주소 전체 주제
             const response = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response.data.articles);
             // 상태변수, 타입 지정.
@@ -71,7 +71,7 @@ const NewList = ({ category }) => {
           case "&category=business":
             // 뉴스 API 주소 business 주제
             const response_business = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_business.data.articles);
             // 상태변수, 타입 지정.
@@ -80,7 +80,7 @@ const NewList = ({ category }) => {
           case "&category=entertainment":
             // 뉴스 API 주소 entertainment 주제
             const response_entertainment = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_entertainment.data.articles);
             // 상태변수, 타입 지정.
@@ -89,7 +89,7 @@ const NewList = ({ category }) => {
           case "&category=health":
             // 뉴스 API 주소 health 주제
             const response_health = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_health.data.articles);
             // 상태변수, 타입 지정.
@@ -98,7 +98,7 @@ const NewList = ({ category }) => {
           case "&category=science":
             // 뉴스 API 주소 science 주제
             const response_science = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_science.data.articles);
             // 상태변수, 타입 지정.
@@ -107,7 +107,7 @@ const NewList = ({ category }) => {
           case "&category=sports":
             // 뉴스 API 주소 sports 주제
             const response_sports = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_sports.data.articles);
             // 상태변수, 타입 지정.
@@ -116,7 +116,7 @@ const NewList = ({ category }) => {
           case "&category=technology":
             // 뉴스 API 주소 technology 주제
             const response_technology = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=b7adb4f936494b3bac62f446ab7686cb`
+              `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=7f45389c9752411b806911d5541b6bed`
             );
             setArticles(response_technology.data.articles);
             // 상태변수, 타입 지정.
@@ -124,7 +124,7 @@ const NewList = ({ category }) => {
             break;
           case "&category=busanFood":
             const response3 = await axios.get(
-              `https://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D&numOfRows=100&pageNo=1&resultType=json`
+              `https://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=NKQVdd8SPTFGaAPyj%2BYkVPjMJyUF7ZPQ8R4MVMKx%2BpYiukbIuyMYSsfJr5I28sDPulaO7g974TxYV7ll8rx9Fw%3D%3D&numOfRows=100&pageNo=1&resultType=json`
             );
             setArticles(response3.data.getFoodKr.item);
             // 상태변수, 타입 지정.
@@ -133,7 +133,7 @@ const NewList = ({ category }) => {
           case "&category=busanWalking":
             // 부산도보여행 API 주소, busanWalking
             const response4 = await axios.get(
-              `https://apis.data.go.kr/6260000/WalkingService/getWalkingKr?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D&pageNo=1&numOfRows=100&resultType=json`
+              `https://apis.data.go.kr/6260000/WalkingService/getWalkingKr?serviceKey=NKQVdd8SPTFGaAPyj%2BYkVPjMJyUF7ZPQ8R4MVMKx%2BpYiukbIuyMYSsfJr5I28sDPulaO7g974TxYV7ll8rx9Fw%3D%3D&pageNo=1&numOfRows=100&resultType=json`
             );
             setArticles(response4.data.getWalkingKr.item);
             // 상태변수, 타입 지정.
